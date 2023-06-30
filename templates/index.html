@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV Web</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <a href="#home">
+                    AndresG
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="selecionar()">Home</a></li>
+                    <li><a href="#aboutme" onclick="selecionar()">About me</a></li>
+                    <li><a href="#skills" onclick="selecionar()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="selecionar()">Projects</a></li>
+                    <li><a href="#curriculum" onclick="selecionar()">CV</a></li>
+                    <li><a href="#contacto" onclick="selecionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick=mostrarOcultarMenu()>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div> 
+
+    <section id="home" class="home">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="banner-content">
+                        <div class="img-container">
+                            <img src="{% static 'img/profile.png' %}" alt="">
+                        </div>
+                        <div>
+                            <h1>Andres Gonzalez</h1>
+                            <div class="text-animate">
+                                <h2>Software developer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="banner-content">
+                        <div class="network">
+                            <p>Hit me on my social media: </p>
+                            <a href="https://www.facebook.com/andrealejandrog/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/andrealejandrog" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/andrealejandrog/" target="_blank"><i class="fa-brands fa-instagram" target=_blank></i></a>
+                            <a href="https://wa.me/+50242716363" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <div class="content-section">
+            <h2>About me</h2>
+            <p><span class="Name-about">Hi, I'm Andres Gonzalez</span>, and I'm a passionate front-end developer specializing in React. I'm also a skilled back-end developer with expertise in Python (Django, FastAPI, and Flask). With 3 years of professional experience in web development, data visualization, and analysis, I have also gained experience in leading projects and operations management."
+            <br>
+
+            I have always been incredibly passionate about technology. You know those moments when you help your mom with her phone and she exclaims, 'This kid is a genius with technology!' Well, I am determined to work hard and become one, or the closest to one.</p>
+
+            <div class="row">
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            11-21-1993
+                        </li>
+                        <li>
+                            <strong>Phone Number</strong>
+                            +(502) 4271-6363
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            andrealejandrog@gmail.com
+                        </li>
+                        <li>
+                            <strong>Location</strong>
+                            Guatemala City, Guatemala.
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="container-hobbies">
+                        <div class="interest">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Soccer</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Travel</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Read</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>Anime Fan</span>
+                        </div>
+                    </div>
+                    <a href="" download="/utils/cv.pdf">
+                        <button class="button">
+                                Donwload CV <i class="fa-solid fa-download"></i>
+                            
+                            <span class="overlay"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="skill-bar">
+                            <div class="progress javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="skill-bar">
+                            <div class="progress htmlcss">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="progress python">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="skill-bar">
+                            <div class="progress powerbi">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="progress sql">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunication</span>
+                        <div class="skill-bar"">
+                            <div class="progress communication">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Team Work</span>
+                        <div class="skill-bar">
+                            <div class="progress teamwork">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>English</span>
+                        <div class="skill-bar">
+                            <div class="progress english">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Conflict Resolution</span>
+                        <div class="skill-bar">
+                            <div class="progress conflict">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="skill-bar">
+                            <div class="progress pm">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Selected Work</h2>
+            <div class="galeria movies">
+                <div class="proyecto article">
+                    <img src="{% static 'img/movies.png' %}" alt="">
+                    <!-- <img src="utils/images-removebg-preview.png" alt=""> -->
+                    <div class="overlay">
+                        <h3>Single Page <></> Movie Review Web</h3>
+                        <p>ReactJs/API</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="{% static 'img/Powerbi.png' %}" alt="">
+                    <div class="overlay">
+                        <h3>Power BI creative Designs</h3>
+                        <p>Data Visualization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>My Resume</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Economics</h4>
+                        <span class="casa">Universidad de San Carlos de Guatemala</span>
+                        <span class="fecha">2014 - 2019</span>
+                        <p>Economics has been my passion since I was a little boy, and I have gathered significant knowledge and skills regarding how the economy is governed in our world</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>BBA</h4>
+                        <span class="casa">ESI School of management.</span>
+                        <span class="fecha">2015 - 2018</span>
+                        <p>Gathered knowledge about how to manage team works and deliver proyects.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Software Developer</h4>
+                        <span class="casa">Online education</span>
+                        <span class="fecha">2015 - 2018</span>
+                        <p>I have always been passionate about technology and during this time I could expand my knowlege about different technologies and their applications.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>Quality assurance analyst representative</h4>
+                        <span class="casa">Allied GLobal</span>
+                        <span class="fecha">2012 - 2012</span>
+                        <p>Bilingual quality assurance analyst for Contact Center & BPO.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Quality assurance supervisor analyst</h4>
+                        <span class="casa">Allied Global</span>
+                        <span class="fecha">2015 - 2017</span>
+                        <p>Bilingual quality assurance Supervisor for Contact Center & BPO.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Quality assurance Corporate Manager</h4>
+                        <span class="casa">Allied Global</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>QA Manager for Allied Global Contact and BPO. Creating and executing plans to ensure quality.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Sales Operations Manager</h4>
+                        <span class="casa">Allied Global</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>QA Manager for Allied Global Contact and BPO. Creating and executing plans to ensure quality.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contact</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="/" class="col" method="post"> {%  csrf_token   %}
+                    <input type="text" placeholder="Your name" name="name">
+                    <input type="text" placeholder="Phone number" name="number">
+                    <input type="text" placeholder="email address" name="email">
+                    <input type="text" placeholder="topic" name="topic">
+                    <textarea id="" cols="30" rows="10" placeholder="message" name="message"></textarea>    
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="popup-message">{{ message }}</div>
+                         {% endfor %}
+                    {% endif %}
+                    <button type="submit">  
+                        Send message <i class="fa-solid fa-paper-plane"></i>
+                        <span  class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="{% static 'img/mapa.png' %}" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Guatemala, Guatemala.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Number: +(502) 42716363 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: andrealejandrog@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#home" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/andrealejandrog/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/andrealejandrog/" target="_blank"></a><i class="fa-brands fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/andrealejandrog/" target="_blank"><i class="fa-brands fa-linkedin-in" ></i></a>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

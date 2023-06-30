@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <a href="#home">
+                    AndresG
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="selecionar()">Home</a></li>
+                    <li><a href="#aboutme" onclick="selecionar()">About me</a></li>
+                    <li><a href="#skills" onclick="selecionar()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="selecionar()">Projects</a></li>
+                    <li><a href="#curriculum" onclick="selecionar()">CV</a></li>
+                    <li><a href="#contacto" onclick="selecionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div> 
+
+    <section>
+        <p>Thank you for reaching out to me. I will reply soon. </p>
+    </section>
+    
+</body>
+</html>
